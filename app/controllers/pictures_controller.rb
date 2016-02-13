@@ -1,13 +1,21 @@
 class PicturesController < ApplicationController
   def index
   end
+
+  def show
+    @picture = Picture.find(params[:id])
+  end
+
   def new
     @picture = Picture.new
   end
 
   def create
   @picture = Picture.create( picture_params )
+  redirect_to @picture
   end
+
+
 
 private
 
