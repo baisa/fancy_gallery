@@ -1,0 +1,10 @@
+<h1>Gallery</h2>
+
+<% @pictures.each do |picture| %>
+
+  <%= picture.title %></h3>
+  <%= image_tag picture.avatar.url(:medium) %>
+  <%= link_to 'Destroy', picture_path(picture),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %>
+  <% end %>
