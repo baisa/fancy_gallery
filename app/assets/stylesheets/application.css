@@ -12,4 +12,8 @@
  *
  *= require_tree .
  *= require_self
+ *= require bootstrap_and_overrides
+ *= require bootstrap/image-gallery
+ *= require bootstrap/colorpicker
+ *= require bootstrap/datepicker
  */
